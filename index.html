@@ -1,0 +1,31 @@
+<html>
+<head>
+	<link href="css/jquery-ui.min.css" rel="stylesheet"/>
+	<script src="js/funcoes.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript"></script>
+	
+	<script>
+		$( document ).ready(function() {
+			console.log( "ready!" );
+			
+		});
+	</script>
+</head>
+<body>
+	<input type="hidden" id="id_venda" value="0"/>
+    Produto:
+    <input type="text" class="venda" title="descProduto" id="txtProduto"/>
+    Valor:
+    <input type="text" class="venda" title="vlrProduto" id="txtValor"/>
+    <hr/>
+    <button id="btnAdicionar" onclick="adicionar(1, 'id_venda')">Adicionar item</button>
+    <button id="btnLer" onclick="ler()">Ler valor</button>
+    <button id="btnRemover" onclick="remover()">Remover item</button>
+	<button id="btnLimpar" onclick="limpar(-)">Remover todos</button>
+	<button id="btnAlterar" onclick="limpar()">Remover todos</button>
+</body>
+</html>
+
